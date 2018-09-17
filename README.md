@@ -16,8 +16,10 @@ python start.py
 
 ## HTMLTestRunnerCN
 #### 安装
-github地址：https://github.com/findyou/HTMLTestRunnerCN
 ```
+git clone https://github.com/ganodermaking/testing-api.git
+git clone https://github.com/findyou/HTMLTestRunnerCN
+cd testing-api/common/
 cp ../HTMLTestRunnerCN/python2x/HTMLTestRunnerCN.py common/
 ```
 
