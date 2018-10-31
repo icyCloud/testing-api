@@ -9,14 +9,14 @@ import os
 
 class Config:
     # 项目根目录
-    base_dir = "./"
+    base_dir = "/Users/ganodermaking/code/python/testing-api/"
 
     def __init__(self):
         pass
 
     @staticmethod
-    def get(section, key, file="config.ini"):
+    def get(section, key, filename="config.ini"):
         os.chdir(Config.base_dir)
         cf = ConfigParser.ConfigParser()
-        cf.read(file)
+        cf.read(filename)
         return cf.get(section, key)

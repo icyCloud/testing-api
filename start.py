@@ -25,6 +25,7 @@ runner_tester = Config.get('runner', 'RUNNER_TESTER')
 fp = file(runner_path, 'wb')
 runner = HTMLTestRunner(
     stream=fp,
+    verbosity=2,
     title=runner_title,
     description=runner_description,
     tester=runner_tester
