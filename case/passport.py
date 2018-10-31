@@ -27,6 +27,7 @@ class PassportTestCase(unittest.TestCase):
         res = result.json()
 
         self.execl.write(i + 2, res['code'], res['msg'])
+        print res
         self.assertEqual(res['code'], row['code'])
 
     @staticmethod
